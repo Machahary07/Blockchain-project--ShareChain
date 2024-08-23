@@ -1,1 +1,80 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract FileSharingPlatform {
+    
+    // Enum to define the type of minting
+    enum MintingType { PreToken, AdditionalAccess }
+
+    // Structure to hold user details
+    struct User {
+        address userAddress;
+        uint256 balance;
+        bool isRegistered;
+    }
+
+    // Mapping to store user data
+    mapping(address => User) public users;
+
+    // Initial pre-token amount given to new users
+    uint256 public preTokenAmount = 100;
+
+    // Event for user registration
+    event UserRegistered(address indexed userAddress);
+    // Event for tokens minted
+    event TokensMinted(address indexed to, uint256 amount, MintingType mintType);
+
+    // Modifier to check if the user is registered
+    modifier onlyRegistered() {
+        require(users[msg.sender].isRegistered, "User is not registered.");
+        _;
+    }
+
+    // Function to register a new user
+    function registerUser() external {
+        require(!users[msg.sender].isRegistered, "User is already registered.");
+
+        // Register the user and allocate pre-tokens
+        users[msg.sender] = User({
+            userAddress: msg.sender,
+            balance: preTokenAmount,
+            isRegistered: true
+        });
+
+        emit UserRegistered(msg.sender);
+    }
+
+    // Internal function to mint tokens based on the minting type
+    function mint(address to, uint256 amount, MintingType mintType) internal {
+        require(amount > 0, "Amount must be greater than zero.");
+        
+        if (mintType == MintingType.PreToken) {
+            // Mint pre-tokens to the user's balance
+            users[to].balance += amount;
+        } else if (mintType == MintingType.AdditionalAccess) {
+            // Mint additional access tokens to the user's balance
+            users[to].balance += amount;
+        }
+
+        emit TokensMinted(to, amount, mintType);
+    }
+
+    // Function to purchase additional access tokens
+    function buyTokens(uint256 amount) external onlyRegistered {
+        require(amount > 0, "Amount must be greater than zero.");
+
+        // Mint additional access tokens to the user's balance
+        mint(msg.sender, amount, MintingType.AdditionalAccess);
+    }
+
+    // Function to check user balance
+    function checkBalance() external view onlyRegistered returns (uint256) {
+        return users[msg.sender].balance;
+    }
+
+    // Admin function to change pre-token amount
+    function setPreTokenAmount(uint256 newAmount) external {
+        preTokenAmount = newAmount;
+    }
+}
 
