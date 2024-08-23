@@ -52,7 +52,7 @@ For any inquiries or feedback regarding the **FileSharingPlatform**, please reac
 - **Name**: Jeu Machahary
 - **Email**: jeumachahary07@gmail.com
 - **LinkedIn**: 
-- **GitHub**: (https://github.com/Machahary07)
+- **GitHub**: https://github.com/Machahary07
 - **Instagram**: https://www.instagram.com/_not_natsu_tzy____/
 
 ---
