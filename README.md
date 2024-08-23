@@ -1,6 +1,4 @@
-Here's a README file tailored for your **FileSharingPlatform** project, including sections for vision, flowchart, contract address, future scope, and contact details.
-
----
+![ShareChain Logo](https://github.com/user-attachments/assets/1e6900eb-d7d7-4fa1-bf15-7763215f3a95)
 
 # FileSharingPlatform
 
@@ -8,6 +6,7 @@ Here's a README file tailored for your **FileSharingPlatform** project, includin
 **FileSharingPlatform** aims to revolutionize digital asset sharing by providing a decentralized and user-friendly interface for users to manage their files, photos, and videos. The platform leverages blockchain technology to ensure secure, transparent, and efficient file management, empowering users to connect and collaborate in a new way.
 
 ## Flowchart
+```
 [Start]
    |
    v
@@ -32,10 +31,10 @@ Here's a README file tailored for your **FileSharingPlatform** project, includin
                            |
                            v
                         [End]
-
+```
 
 ## Contract Address
-- **Ethereum Contract Address:** `0x1e11ABeFF2013FD51e1Ef49c6133C16Fe8b64843`  
+- **Ethereum Contract Address:** `0x1e11abeff2013fd51e1ef49c6133c16fe8b64843`  
 
 ## Future Scope
 The **FileSharingPlatform** is designed with scalability and adaptability in mind. Future enhancements may include:
@@ -51,6 +50,7 @@ For any inquiries or feedback regarding the **FileSharingPlatform**, please reac
 - **Name**: Jeu Machahary
 - **Email**: jeumachahary07@gmail.com
 - **LinkedIn**: 
-- **GitHub**: https://github.com/Machahary07
+- **GitHub**: (https://github.com/Machahary07)
+- **Instagram**: https://www.instagram.com/_not_natsu_tzy____/
 
 ---
