@@ -1,9 +1,9 @@
 ![ShareChain Logo](https://github.com/user-attachments/assets/1e6900eb-d7d7-4fa1-bf15-7763215f3a95)
 
-# FileSharingPlatform
+# ShareChain
 
 ## Vision
-**FileSharingPlatform** aims to revolutionize digital asset sharing by providing a decentralized and user-friendly interface for users to manage their files, photos, and videos. The platform leverages blockchain technology to ensure secure, transparent, and efficient file management, empowering users to connect and collaborate in a new way.
+**ShareChain** aims to revolutionize digital asset sharing by providing a decentralized and user-friendly interface for users to manage their files, photos, and videos. The platform leverages blockchain technology to ensure secure, transparent, and efficient file management, empowering users to connect and collaborate in a new way.
 
 ## Flowchart
 ```
@@ -63,7 +63,7 @@
 
 
 ## Future Scope
-The **FileSharingPlatform** is designed with scalability and adaptability in mind. Future enhancements may include:
+The **ShareChain** is designed with scalability and adaptability in mind. Future enhancements may include:
 - **Advanced File Sharing Features**: Implementing capabilities for sharing different file types, including large media files and folders.
 - **User Profiles and Friendships**: Enabling users to create profiles, connect with friends, and share files within their networks.
 - **Enhanced Security**: Incorporating additional security measures such as encryption and multi-signature transactions for sensitive files.
@@ -71,7 +71,7 @@ The **FileSharingPlatform** is designed with scalability and adaptability in min
 - **Integration with Other Blockchains**: Exploring interoperability with other blockchain networks to enhance user experience and reach.
 
 ## Contact Details
-For any inquiries or feedback regarding the **FileSharingPlatform**, please reach out:
+For any inquiries or feedback regarding the **ShareChain**, please reach out:
 
 - **Name**: Jeu Machahary
 - **Email**: jeumachahary07@gmail.com
